@@ -20,26 +20,15 @@
     <script type="text/javascript" src="chat.js"></script>
     <script type="text/javascript">
 	
-    var areYouReallySure = false;
- var internalLink = false;
- 
- function areYouSure() {
- if(allowPrompt) {
- if (!areYouReallySure && !internalLink && true) {
- areYouReallySure = true;
- chat.send(name  +  "  disconnected", "INFO");	
-  $(this).val("");
-						
-    
- }
- } else {
- allowPrompt = true;
- }
- }
- 
- var allowPrompt = true;
- window.onbeforeunload = areYouSure;
- 
+
+ 		function sendmessage()
+        {
+          typedtext = document.getElementById('sendie').value;
+    		   chat.send(typedtext, name);	
+    			        $("#sendie").val("");
+    			        	        
+                   						    
+        } 	 
  
         // ask user for name with popup prompt    
         var name = prompt("Enter your nickname :", "");
@@ -64,12 +53,7 @@
     	        chat.send(name  +  "  connected", "INFO");	
     			        $(this).val("");
 						
-    			function sendmessage()
-        {
-          
-                
-                   						    
-        } 	 
+    	
     		 // watch textarea for key presses
              $("#sendie").keydown(function(event) {  
              
@@ -132,7 +116,7 @@
           
 		  <textarea id="sendie"  maxlength = '100' ></textarea>
 			  </form>
-	  <button onClick="send()" id="buttonsend"></button> 
+	  <button onClick="sendmessage()" id="buttonsend"></button> 
 	  
     </div>
 
