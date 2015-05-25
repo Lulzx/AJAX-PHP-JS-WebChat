@@ -18,8 +18,8 @@ no database needet,because all chat log saving into chat.txt (nickname+message)
 
 #How it works
 1.If you have load a page,you recive dialog,then should give you Nickname.
-2.You See main interface its a Form(input) and send button(not working for now)
-3.If you have press "Enter" button of you keyboard,starts a process(PHP) gets nickname and message and  adds this into chat.txt in Form: nickname(<span>) and message(<a>)
+2.You See main interface its a Form(input) and send button
+3.If you have press "Enter" button(or send button) of you keyboard,starts a process(PHP) gets nickname and message and  adds this into chat.txt in Form: nickname(<span>) and message(<a>)
 4.Chat reloading to See changes in chat.txt
 
 also you have a short Form nickname+message
